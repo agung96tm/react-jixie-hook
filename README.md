@@ -1,4 +1,6 @@
 # React Jixie Hook
+[![Build Status](https://app.travis-ci.com/agung96tm/react-jixie-hook.svg?branch=main)](https://app.travis-ci.com/agung96tm/react-jixie-hook)
+
 This package is a library for integrate jixie analytics in your react project and inspired by [react-gtm-hook](https://github.com/elgorditosalsero/react-gtm-hook).
 
 
@@ -9,6 +11,38 @@ In your React project run
 npm i --save react-jixie-hook
 ```
 
+
+## How to use
+
+```jsx
+import { JixieProvider, useJixieDispatch } from 'react-jixie-hook';
+
+const App = () => {
+  const jixieParams = {
+    id: 'jixie-123',
+  }
+
+  return (
+    <GTMProvider state={jixieParams}>
+      <div>
+        <LoginView />
+      </div>
+    </GTMProvider>
+  )
+}
+
+const LoginView = () => {
+  const sendDataToJixie = useJixieDispatch()
+  const handleClick = () => sendDataToJixie({ event: 'login', value: 'imAwesome' });
+
+  return (
+    <div>
+      <h1>Login</h1>
+      <button onClick={handleClick}>Login</button>
+    </div>
+  )
+}
+```
 
 ## Contributors
 
