@@ -9,6 +9,14 @@
   "author": "Agung Yuliyanto <agung.96tm@gmail.com>",
   "license": "MIT",
   "private": false,
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "hooks"
+  ],
   "scripts": {
     "build": "yarn build:esm && yarn build:cjs",
     "build:esm": "tsc",
