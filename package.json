@@ -1,5 +1,5 @@
 {
-  "name": "react-jixie",
+  "name": "react-jixie-hook",
   "version": "0.0.1",
   "description": "This package is a library for integrate jixie analytics in your react project",
   "main": "./lib/cjs/index.js",
