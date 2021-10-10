@@ -6,7 +6,7 @@ cache:
     - node_modules
 
 before_deploy:
-    - npm run build
+    - yarn build
 deploy:
     provider: npm
     email: "$NPM_EMAIL"
