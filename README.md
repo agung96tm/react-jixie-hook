@@ -23,11 +23,11 @@ const App = () => {
   }
 
   return (
-    <GTMProvider state={jixieParams}>
+    <JixieProvider state={jixieParams}>
       <div>
         <LoginView />
       </div>
-    </GTMProvider>
+    </JixieProvider>
   )
 }
 
